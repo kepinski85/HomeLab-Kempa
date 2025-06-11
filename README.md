@@ -61,8 +61,8 @@ homelab-kempexor/
 │ └── topology.md
 ├── storage/
 │ └── mount.md
-└── assets/
-  └── topo.png
+└── topo.png
+  
 ## Notes
 
 All configurations will be documented as plain-text walkthroughs to reflect real-world thinking and debugging.
