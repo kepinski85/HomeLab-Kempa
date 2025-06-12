@@ -24,7 +24,7 @@ This repository documents my journey in building a complete self-managed homelab
 ISP Router → TP-Link Archer C6 → Unmanaged Switch → [PC, RPi4, Old PC]  
 Wi-Fi: MacBook (Kali)
 
-Diagram: `assets/topology.png` (to be added)
+Topology: topo.png
 
 ## Project Phases
 
