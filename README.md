@@ -28,24 +28,23 @@ Topology: topo.png
 
 ## Project Phases
 
-- [x] Phase 0: Initialize Git repository and documentation
-- [ ] Phase 1: Install and configure Proxmox VE
+- [ ] Phase 0: Initialize Git repository and documentation
+- [x] Phase 1: Install and configure Proxmox VE
 - [ ] Phase 2: Deploy core services (Pi-hole, Nextcloud, VPN)
 - [ ] Phase 3: Set up reverse proxy with HTTPS support
 - [ ] Phase 4: Add monitoring and logging stack
 - [ ] Phase 5: Build public documentation page/portfolio
 
-## Weekly Plan - Week 1: Foundation Setup
+## Plan
+| Service        | Description                                      | Location                     |
+|----------------|--------------------------------------------------|------------------------------|
+| ✅ Vaultwarden | Self-hosted Bitwarden-compatible password manager | [`vaultwarden/`](./vaultwarden) |
+| ⏳ Coming soon | Monitoring (Netdata / Grafana / Prometheus)     | `monitoring/`                |
+| ⏳ Coming soon | VPN (WireGuard / Tailscale)                     | `vpn/`                       |
+| ⏳ Coming soon | DNS sinkhole (Pi-hole / AdGuardHome)            | `pihole/`                    |
+| ⏳ Coming soon | Reverse proxy + SSL (Caddy / Nginx Proxy Manager) | `proxy/`                   |
+| ⏳ Coming soon | File storage & sync (Nextcloud / Syncthing)     | `cloud/`        
 
-| Day | Task                                                         | Notes                  |
-|-----|--------------------------------------------------------------|------------------------|
-| 1   | Install Proxmox VE on the old PC                             | `proxmox/install.md`   |
-| 2   | Configure repositories and update the system                 | `proxmox/config.md`    |
-| 3   | Connect external storage (RPi NAS via NFS/Samba)             | `storage/mount.md`     |
-| 4   | Deploy Pi-hole in LXC container                              | `services/pihole.md`   |
-| 5   | Set up static IPs and local DNS via Pi-hole                  | `network/dns.md`       |
-| 6   | Deploy and test VPN access (WireGuard)                       | `services/vpn.md`      |
-| 7   | Push updates to GitHub and publish a short status update     | `README.md`            |
 
 ## Directory Structure (planned)
 homelab-kempexor/
@@ -62,7 +61,19 @@ homelab-kempexor/
 ├── storage/
 │ └── mount.md
 └── topo.png
-  
+├── vaultwarden
+| └── docker-compose.yml
+| └── README.md
+
+## Skills in Progress
+
+- Linux administration (RHCSA in progress)
+- Python scripting (via Codecademy)
+- Cybersecurity & pentesting (TryHackMe / OverTheWire)
+- Networking, DNS, and firewalling
+- Docker, Proxmox, containers, and self-hosting
+- Infrastructure documentation and GitOps
+
 ## Notes
 
 All configurations will be documented as plain-text walkthroughs to reflect real-world thinking and debugging.
