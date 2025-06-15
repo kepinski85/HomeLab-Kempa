@@ -78,3 +78,4 @@ homelab-kempexor/
 
 All configurations will be documented as plain-text walkthroughs to reflect real-world thinking and debugging.
 This repository will grow over time into a complete homelab knowledge base and demonstration of my practical skills.
+Added Arduino folder where I made little side project to monitoring lab room parameters
